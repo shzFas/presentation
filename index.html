@@ -16,10 +16,10 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section> <!-- 1 Слайд -->
 					Hello, my name is Yuriy and today is my...
 				</section>
-				<section>
+				<section> 
 					<div class="top">
 						Presentaion
 						<br/>
@@ -28,18 +28,144 @@
 						<img style="width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
 					</div>
 				</section>
-				<section>
+				<section> <!-- 2 Слайд -->
 					<section>
 						<h1>A bit of history</h1>
 					</section>
 					<section>
-						<img src="https://sun9-6.userapi.com/impg/3OwGa4FtgSY9aIe-E51OHgpdLReykB5gLgrtfg/_mDW8JYBwAU.jpg?size=273x433&quality=96&sign=77e3be2a837e78bf87a6397d28647086&type=album" alt="321">
+						<img src="https://i.yapx.cc/VaX06.jpg">
 					</section>
 					<section>
 						<iframe width="1280" height="720" src="https://www.youtube.com/embed/XxVg_s8xAms" title="Introduction to React.js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</section>
 				</section>
-				<section>Slide 2</section>
+				<section> <!-- 3 Слайд -->
+					<section>
+						<h1>React</h1>
+					</section>
+					<section>
+						<ul>
+							<li>Frontend and JS library to build user interfaces</li>
+							<li>Makes it easier to create responsive WP</li>
+							<li>Dev by Facebook</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Fundamentals</h1>
+					</section>
+					<section>
+						<h2>1) Component</h2>
+						<ul>
+							<li>Fundamental building block of React</li>
+							<li>Lets you split up the UI into indepent, reusable pieces, and think about each piece in isolation</li>
+							<li>Conceptually they are like JS functions
+								<ul>
+									<li>Accept arbitrary inputs calles "props"</li>
+									<li>Return React elements that describe what should appear on the screen</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Component Example</h2>
+						<img style="width: 500px;" src="https://work.haufegroup.io/images/learn-react/Components.png" alt="">
+					</section>
+					<section>
+						<h2>2) Props</h2>
+						<ul>
+							<li>Passed down to component from parent component</li>
+							<li>
+								Should be immutable or "pure"
+								<ul>
+									<li>
+										Read-Only, never modified
+									</li>
+								</ul>
+							</li>
+							<li>All React components must act like pure functions with respect to their props</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Props</h3>
+						<img src="https://dmitripavlutin.com/static/6d14625626a323816b47d301a6319626/59014/cover.png" alt="">
+					</section>
+					<section>
+						<h2>3) State</h2>
+						<ul>
+							<li>Represents the internal state of the component</li>
+							<li>When a components state data changes, the component is re-rendered</li>
+						</ul>
+					</section>
+					<section>
+						<h2>4) Virtual DOM</h2>
+						<ul>
+							<li>Document Object Model(DOM)</li>
+							<li>The real DOM is the structure of a webpage</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Virtual DOM</h2>
+						<ul>
+							<li>DOM maniulatation is the heart of the modern, interactive web</li>
+							<li>Unfortunately, it's a lot slower than most JS operations</li>
+							<li>Slowness is made worse by the fact that most JS frameworks update the DOM much more than they have</li>
+						</ul>
+					</section>
+					<section style="font-size: 36px;">
+						<h2>Virtual DOM</h2>
+						<ul>
+							<li>To address this inefficiency, React popularized the virtual DOM for efficient re-rendering of the actual DOM</li>
+							<li>The virtual DOM is a lightweight copy of the real DOM</li>
+							<li>React aims to re-render the virtual tree only when state changes</li>
+							<li>Once the virtual DOM has updated, React compares the virtual DOM with a virtual DOM snapshot before the state change</li>
+							<li>It then compares which obj have been changed and only updates those obj on the real DOM</li>
+						</ul>
+					</section>
+					<section>
+						<img src="https://miro.medium.com/max/720/1*CqdIWZy0NMPQhYx2rKzo9g.webp" alt="">
+					</section>
+					<section>
+						<h2>5) JSX</h2>
+						<ul>
+							<li>JS extension</li>
+							<li>Allows us to combine js and html</li>
+						</ul>
+					</section>
+					<section>
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20210114162533/20210114105113000iOS.jpg" alt="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Pros</h1>
+					</section>
+					<section>
+						<ul>
+							<li>Fast and efficient thought the use of a virtual DOM</li>
+							<li>Makes writing JS easier with JSX</li>
+							<li>Easy to read and understand code</li>
+							<li>
+								React dev tools
+								<ul>
+									<li>Chrome(Mozila) extension makes debugging easier</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Cons</h2>
+					</section>
+					<section>
+						<ul>
+							<li>React is only the view layer</li>
+							<li>Learning curve</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
